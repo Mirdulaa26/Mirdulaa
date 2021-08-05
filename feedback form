@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.box {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<h2>FEED BACK FORM</h2>
+<div class="box">
+  <form>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname"> Name of the student</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="class">Class</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="class" name="class" placeholder="Your class..">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="email">Mail Id</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="mailid" placeholder="Your mail id..">
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Roll_no">Roll no.</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Roll_no:" name="Roll_no" placeholder="Your Roll_no..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Whatsapp no">Whatsapp number</label>
+      </div>
+      <div class="col-75">
+      <input type="text" id="Whatsapp no:" name="Whatsapp no" placeholder="Your Whatsapp no..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Address"> Residential Address</label>
+      </div>
+      <div class="col-75">
+        <textarea id="Address" name="Address" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="feed_back"> Feedback if any</label>
+      </div>
+      <div class="col-75">
+        <textarea id="Feedback" name="Feedback" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="stars">
+    <form action="">
+      <label for="feed_back"> Rating</label>
+      <input class="star star-5" id="star-5" type="radio" name="star"/>
+      <label class="star star-5" for="star-5"></label>
+      <input class="star star-4" id="star-4" type="radio" name="star"/>
+      <label class="star star-4" for="star-4"></label>
+      <input class="star star-3" id="star-3" type="radio" name="star"/>
+      <label class="star star-3" for="star-3"></label>
+      <input class="star star-2" id="star-2" type="radio" name="star"/>
+      <label class="star star-2" for="star-2"></label>
+      <input class="star star-1" id="star-1" type="radio" name="star"/>
+      <label class="star star-1" for="star-1"></label>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+  </form>
+</div>
+
+</body>
+</html>
